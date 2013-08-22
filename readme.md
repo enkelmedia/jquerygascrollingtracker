@@ -3,6 +3,11 @@ jQuery - Google Analytics Scolling Tracker
 
 This is a very simple tracker that helps you track if a web page visitor scrolls so an elemen is shown in screen. 
 
+Online demo
+-------
+
+Try the online demo here: (http://enkelmedia.github.io/jquerygascrollingtracker/demo/demo.html)
+
 Gettings started
 -------
 
@@ -33,3 +38,5 @@ If you want to try the script without calling Google Analytics all the time, jus
 		
 		gaScrollTracker.track();
 	});
+
+
