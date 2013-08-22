@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Google Analytics Scolling Tracker - Demo</title>
+	
+	<link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="../src/jquery.ga-scrolltracker.js" ></script>
+	
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			
+			gaScrollTracker.trackElement = function(strTest){
+				alert('Tracked: ' + strTest);
+			};
+			
+			gaScrollTracker.track();
+		});
+		
+	</script>
+
+	<style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+	
+</head>
+<body>
+
+	 <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+        <h3 class="muted">jQuery - Google Analytics Scrolling Tracker</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>Does your visitor scroll to see the content?</h1>
+        <p class="lead">Using this simple tracking plugin for Google Analtyics you can add tracking to your HTML-elements. If the user scrolls so that they are visible on the screen - it will be tracked in Google Analtyics using the event tracking-feature.</p>
+<!--         <a class="btn btn-large btn-success" href="#">Sign up today</a> -->
+      </div>
+
+      <hr>
+	  <h3>This is a demo-page</h3>
+      <p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nunc a est sollicitudin cursus. Praesent id luctus libero, sit amet volutpat orci. Phasellus porttitor posuere dignissim. Aenean mauris nibh, tempus ut cursus sed, sagittis vel magna. Integer gravida, nulla in posuere eleifend, odio ante lobortis urna, eu elementum metus neque a mauris. Etiam pharetra vulputate enim. Proin sit amet odio dapibus, blandit metus vel, varius lacus. Praesent malesuada sed lorem in blandit. Nunc viverra fringilla mollis.<br/>
+		  <br/>	
+		  Mauris sagittis non felis eu interdum. Donec congue accumsan sapien, vel malesuada odio auctor eleifend. In consequat, augue ac mattis gravida, dui nibh sodales diam, eget adipiscing nibh eros non nunc. Pellentesque sollicitudin, erat ac pretium porta, purus metus imperdiet quam, a convallis eros lacus ac metus. Vestibulum magna sem, vulputate vitae vulputate eget, aliquet ac quam. Pellentesque hendrerit viverra augue, non faucibus metus laoreet ac. Vivamus a nisl eleifend, gravida eros non, dictum purus. Curabitur quis auctor risus, ut fermentum nisi. Vestibulum porttitor non leo et luctus. Aenean euismod justo ut eros rhoncus pellentesque. Phasellus semper facilisis orci. Vivamus tristique varius tortor quis elementum. Praesent malesuada id arcu eget placerat. Maecenas blandit vel magna sed interdum.
+	  </p>
+	  <h3>This is a demo-page</h3>
+      <p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nunc a est sollicitudin cursus. Praesent id luctus libero, sit amet volutpat orci. Phasellus porttitor posuere dignissim. Aenean mauris nibh, tempus ut cursus sed, sagittis vel magna. Integer gravida, nulla in posuere eleifend, odio ante lobortis urna, eu elementum metus neque a mauris. Etiam pharetra vulputate enim. Proin sit amet odio dapibus, blandit metus vel, varius lacus. Praesent malesuada sed lorem in blandit. Nunc viverra fringilla mollis.<br/>
+		  <br/>	
+		  Mauris sagittis non felis eu interdum. Donec congue accumsan sapien, vel malesuada odio auctor eleifend. In consequat, augue ac mattis gravida, dui nibh sodales diam, eget adipiscing nibh eros non nunc. Pellentesque sollicitudin, erat ac pretium porta, purus metus imperdiet quam, a convallis eros lacus ac metus. Vestibulum magna sem, vulputate vitae vulputate eget, aliquet ac quam. Pellentesque hendrerit viverra augue, non faucibus metus laoreet ac. Vivamus a nisl eleifend, gravida eros non, dictum purus. Curabitur quis auctor risus, ut fermentum nisi. Vestibulum porttitor non leo et luctus. Aenean euismod justo ut eros rhoncus pellentesque. Phasellus semper facilisis orci. Vivamus tristique varius tortor quis elementum. Praesent malesuada id arcu eget placerat. Maecenas blandit vel magna sed interdum.
+	  </p>
+	  <h3 data-track="header3">This is a demo-page</h3>
+      <p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nunc a est sollicitudin cursus. Praesent id luctus libero, sit amet volutpat orci. Phasellus porttitor posuere dignissim. Aenean mauris nibh, tempus ut cursus sed, sagittis vel magna. Integer gravida, nulla in posuere eleifend, odio ante lobortis urna, eu elementum metus neque a mauris. Etiam pharetra vulputate enim. Proin sit amet odio dapibus, blandit metus vel, varius lacus. Praesent malesuada sed lorem in blandit. Nunc viverra fringilla mollis.<br/>
+		  <br/>	
+		  Mauris sagittis non felis eu interdum. Donec congue accumsan sapien, vel malesuada odio auctor eleifend. In consequat, augue ac mattis gravida, dui nibh sodales diam, eget adipiscing nibh eros non nunc. Pellentesque sollicitudin, erat ac pretium porta, purus metus imperdiet quam, a convallis eros lacus ac metus. Vestibulum magna sem, vulputate vitae vulputate eget, aliquet ac quam. Pellentesque hendrerit viverra augue, non faucibus metus laoreet ac. Vivamus a nisl eleifend, gravida eros non, dictum purus. Curabitur quis auctor risus, ut fermentum nisi. Vestibulum porttitor non leo et luctus. Aenean euismod justo ut eros rhoncus pellentesque. Phasellus semper facilisis orci. Vivamus tristique varius tortor quis elementum. Praesent malesuada id arcu eget placerat. Maecenas blandit vel magna sed interdum.
+	  </p>
+	  <h3>This is a demo-page</h3>
+      <p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nunc a est sollicitudin cursus. Praesent id luctus libero, sit amet volutpat orci. Phasellus porttitor posuere dignissim. Aenean mauris nibh, tempus ut cursus sed, sagittis vel magna. Integer gravida, nulla in posuere eleifend, odio ante lobortis urna, eu elementum metus neque a mauris. Etiam pharetra vulputate enim. Proin sit amet odio dapibus, blandit metus vel, varius lacus. Praesent malesuada sed lorem in blandit. Nunc viverra fringilla mollis.<br/>
+		  <br/>	
+		  Mauris sagittis non felis eu interdum. Donec congue accumsan sapien, vel malesuada odio auctor eleifend. In consequat, augue ac mattis gravida, dui nibh sodales diam, eget adipiscing nibh eros non nunc. Pellentesque sollicitudin, erat ac pretium porta, purus metus imperdiet quam, a convallis eros lacus ac metus. Vestibulum magna sem, vulputate vitae vulputate eget, aliquet ac quam. Pellentesque hendrerit viverra augue, non faucibus metus laoreet ac. Vivamus a nisl eleifend, gravida eros non, dictum purus. Curabitur quis auctor risus, ut fermentum nisi. Vestibulum porttitor non leo et luctus. Aenean euismod justo ut eros rhoncus pellentesque. Phasellus semper facilisis orci. Vivamus tristique varius tortor quis elementum. Praesent malesuada id arcu eget placerat. Maecenas blandit vel magna sed interdum.
+	  </p>
+	  <h3 data-track="header5">This is a demo-page</h3>
+      <p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales nunc a est sollicitudin cursus. Praesent id luctus libero, sit amet volutpat orci. Phasellus porttitor posuere dignissim. Aenean mauris nibh, tempus ut cursus sed, sagittis vel magna. Integer gravida, nulla in posuere eleifend, odio ante lobortis urna, eu elementum metus neque a mauris. Etiam pharetra vulputate enim. Proin sit amet odio dapibus, blandit metus vel, varius lacus. Praesent malesuada sed lorem in blandit. Nunc viverra fringilla mollis.<br/>
+		  <br/>	
+		  Mauris sagittis non felis eu interdum. Donec congue accumsan sapien, vel malesuada odio auctor eleifend. In consequat, augue ac mattis gravida, dui nibh sodales diam, eget adipiscing nibh eros non nunc. Pellentesque sollicitudin, erat ac pretium porta, purus metus imperdiet quam, a convallis eros lacus ac metus. Vestibulum magna sem, vulputate vitae vulputate eget, aliquet ac quam. Pellentesque hendrerit viverra augue, non faucibus metus laoreet ac. Vivamus a nisl eleifend, gravida eros non, dictum purus. Curabitur quis auctor risus, ut fermentum nisi. Vestibulum porttitor non leo et luctus. Aenean euismod justo ut eros rhoncus pellentesque. Phasellus semper facilisis orci. Vivamus tristique varius tortor quis elementum. Praesent malesuada id arcu eget placerat. Maecenas blandit vel magna sed interdum.
+	  </p>
+
+      <hr>
+
+      <div class="footer">
+        <p>Created by Markus Johansson</p>
+      </div>
+
+    </div> <!-- /container -->
+	
+
+</body>
+</html>
