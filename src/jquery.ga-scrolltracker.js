@@ -52,7 +52,7 @@ var gaScrollTracker = {
 	trackElement : function(strLabel){
 		var p = document.location.pathname;
 		if(typeof _gaq != 'undefined')
-			_gaq.push(['_trackEvent', 'ScollTrack', strLabel, p, '', true]);
+			_gaq.push(['_trackEvent', 'ScollTrack', strLabel, p, 0, true]);
 			
 	}
 }
